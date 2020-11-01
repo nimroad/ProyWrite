@@ -1,5 +1,5 @@
-Esto. es para
+Esto es para ver como funciona git.
 
-ver como
+Curso Pĺatzi
 
-funciona git
+Video "Crear un repositorio de GIt y haz gtu primer commit"
