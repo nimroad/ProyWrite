@@ -3,3 +3,31 @@ Esto es para ver como funciona git.
 Curso Pĺatzi
 
 Video "Crear un repositorio de GIt y haz gtu primer commit"
+
+Comandos aprendidos
+git init
+	Inicializa GIt en la carpeta indicada
+git status
+	Muestra el estado de los archivos
+git add nombre-archivo.extensión
+	Agrega el archivo a cache, pero aun no lo pasa al repositorio. 
+	Siempre al realizar cambios al archivo, antes de hacer commit hay que hacer add
+git add .
+	Agrega todos los archivos en la carpeta
+git rm --cached nombre-archivo.extensión
+	Remueve el archivo de la cache. Sin --cached no se quita el archivo de la RAM
+git config
+	Muestra todos los comandos disponibles con git
+git config --list
+	Muestra la configuración actual de Git
+git config --list --show-origin
+	Muestra la configuración actual de Git y ubicación en carpetas
+git config --global user.name "nombre-usuario"
+	Asigna el usuario dueño del repositorio
+git config --global user.email "usuario@correo.com"
+	Asigna el e-mail del dueño del repositorio
+git commit - m "Texto"
+	Carga el archivo(s) al repositorio. Aunque se puede enviar solo como git commit,
+	la buena practica es poner un mensaje acerca de los cambios ocurridos.
+git log nombre-archivo.extensión
+	Muestra la historia de versiones del archivo.
