@@ -14,8 +14,33 @@ git add nombre-archivo.extensión
 	Siempre al realizar cambios al archivo, antes de hacer commit hay que hacer add
 git add .
 	Agrega todos los archivos en la carpeta
-git rm --cached nombre-archivo.extensión
-	Remueve el archivo de la cache. Sin --cached no se quita el archivo de la RAM
+git rm 
+	Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones.
+	Debe utilizarse con uno de los siguientes flags:
+	--cached nombre-archivo.extensión
+	Remueve el archivo de la cache. Sin --cached no se quita el archivo del Staging (RAM)
+	--force nombre-archivo.extensión
+	Elimina los archivos de Git y del Disco Duro- Git siempre guarda todo, por lo que podemos acceder al 
+	registro de la existencia de los archivos, de modo que podremos recuperarlos si es
+	necesario (pero debemos usar comandos más avanzados)
+git reset
+	Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja
+	ir , mirar, pasear y volver. Con  git reset  volvemos al pasado sin la posibilidad de volver
+	al futuro. Borramos la historia y la debemos sobreescribir. NO HAY VUELTA ATRAS.
+	
+	Este comando es muy peligroso y debemos usarlo solo en caso de emergencia.
+
+	Debe utilizarse con uno de los siguientes flags:
+	--soft
+	Borramos todo el historial y los registros de GIt pero guardamos los cambios que 
+	tengamos en Staging, asi podemos actualizar las últimas actualizaciones a un nuevo commit.
+	--hard
+	Borra Todo. Toda la información de los commits y del área de staging se borra del
+	hitorial. 
+	
+	git reset HEAD
+	Este es el comando para sacar archivos del áea de Staging. NO para borrarlos, solo
+	para que los últimos cambios de estos archivos no se envíen al último commit.	
 git config
 	Muestra todos los comandos disponibles con git
 git config --list
@@ -32,6 +57,7 @@ git commit - m "Texto"
 git log nombre-archivo.extensión
 	Muestra la historia de versiones del archivo.
 	Cuando aparece la palabra END, es necesario escribir q para salir
+	con --stat te permite ver estadisticas de cambios por archivo
 git show
 	Muestra los cambios realizados entre la versión actual y la anterior
 git diff version1 version2
