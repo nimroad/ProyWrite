@@ -34,3 +34,6 @@ git log nombre-archivo.extensión
 	Cuando aparece la palabra END, es necesario escribir q para salir
 git show
 	Muestra los cambios realizados entre la versión actual y la anterior
+git diff version1 version2
+	Muestra los cambios entre versiones. El color rojo es para la version1 y el color
+	verde es para la version2
