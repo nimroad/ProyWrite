@@ -31,3 +31,4 @@ git commit - m "Texto"
 	la buena practica es poner un mensaje acerca de los cambios ocurridos.
 git log nombre-archivo.extensión
 	Muestra la historia de versiones del archivo.
+	Cuando aparece la palabra END, es necesario escribir q para salir
