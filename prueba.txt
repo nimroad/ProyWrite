@@ -32,3 +32,5 @@ git commit - m "Texto"
 git log nombre-archivo.extensión
 	Muestra la historia de versiones del archivo.
 	Cuando aparece la palabra END, es necesario escribir q para salir
+git show
+	Muestra los cambios realizados entre la versión actual y la anterior
