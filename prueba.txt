@@ -43,7 +43,9 @@ git reset
 	para que los últimos cambios de estos archivos no se envíen al último commit.	
 git checkout
 	Te permite regresar a una versión anterior pero no se cambia en master. Por lo que si se quiere usar esa version anterior se debe posteriormente aplicar git add y commit.
-	Si no se desea el cambio, solo se debe hacer git commit master y se regresa a la ultima versión guardada en master
+	Si no se desea el cambio, solo se debe hacer git commit master y se regresa a la ultima versión guardada en master.
+	Si no se hace ninguna de las dos opciones anteriores, el sistema se desenlaza de la versión master la siguiente conexión y saldrá el mensaje git head desacoplada o git head detached 
+	y es necesario hacer git checkout master para restablecerla. 
 git config
 	Muestra todos los comandos disponibles con git
 git config --list
