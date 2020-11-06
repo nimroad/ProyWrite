@@ -81,3 +81,8 @@ git merge
 	Fusiona los archivos traidos con git fetch y reemplaza los archivos en el directorio de trabajo local.
 git pull
 	Realiza la función de fetch y merge
+
+git branch
+	Se crea una rama alterna a master.
+	Para moverse a la nueva rama se debe hacer git checkout nombreRama
+	Para regresar al master con git checkout master
