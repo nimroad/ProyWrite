@@ -36,11 +36,14 @@ git reset
 	tengamos en Staging, asi podemos actualizar las últimas actualizaciones a un nuevo commit.
 	--hard
 	Borra Todo. Toda la información de los commits y del área de staging se borra del
-	hitorial. 
+	historial. 
 	
 	git reset HEAD
-	Este es el comando para sacar archivos del áea de Staging. NO para borrarlos, solo
+	Este es el comando para sacar archivos del área de Staging. NO para borrarlos, solo
 	para que los últimos cambios de estos archivos no se envíen al último commit.	
+git checkout
+	Te permite regresar a una versión anterior pero no se cambia en master. Por lo que si se quiere usar esa version anterior se debe posteriormente aplicar git add y commit.
+	Si no se desea el cambio, solo se debe hacer git commit master y se regresa a la ultima versión guardada en master
 git config
 	Muestra todos los comandos disponibles con git
 git config --list
