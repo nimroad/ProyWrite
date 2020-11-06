@@ -59,6 +59,8 @@ git config --global user.email "usuario@correo.com"
 git commit - m "Texto"
 	Carga el archivo(s) al repositorio. Aunque se puede enviar solo como git commit,
 	la buena practica es poner un mensaje acerca de los cambios ocurridos.
+	
+	con git commit -am , permite saltarse la linea de add y solo funciona con archivos ya guardados previamente no nuevos.
 git log nombre-archivo.extensión
 	Muestra la historia de versiones del archivo.
 	Cuando aparece la palabra END, es necesario escribir q para salir
