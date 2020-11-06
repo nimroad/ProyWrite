@@ -68,3 +68,14 @@ git show
 git diff version1 version2
 	Muestra los cambios entre versiones. El color rojo es para la version1 y el color
 	verde es para la version2
+
+git clone url
+	Trae copia de master de un servidor remoto al repositorio local.
+git push
+	Envia info del repositorio local al repositorio remoto
+git fetch
+	Trae los archivos modificados en el repositorio remoto sn modificar los archivos del directorio de trabajo local.
+git merge
+	Fusiona los archivos traidos con git fetch y reemplaza los archivos en el directorio de trabajo local.
+git pull
+	Realiza la función de fetch y merge
