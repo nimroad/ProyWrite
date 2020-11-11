@@ -99,7 +99,8 @@ git remote
 git remote -v
 	Te permite ver las opciones de acciones con el servidor remoto
 
-git push origin master:main
+git push origin main
 	Se utiliza datos para enviar al servidor. Anteriormente solo se utilizaba master, pero por cambio en GItHub, ahora se cambio por main, con master:main se especifica que la 
 	rama master local va a la rama main remoto. Si ya se cambió el nombre del directorio seria solo git push origin main
-
+git pull origin main --allow-unrelated-histories
+	Permite trae datos del servidor remoto y con --allow-unrelated-histories, permite fusionar historias no relacionadas
