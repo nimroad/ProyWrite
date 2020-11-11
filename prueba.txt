@@ -100,3 +100,14 @@ git push origin main
 	rama master local va a la rama main remoto. Si ya se cambió el nombre del directorio seria solo git push origin main
 git pull origin main --allow-unrelated-histories
 	Permite trae datos del servidor remoto y con --allow-unrelated-histories, permite fusionar historias no relacionadas
+
+---SSH----
+Genera Llave publica y privada. Con -t se especifica el algoritmo a utilizar, en este caso es rsa, -b es la complejidad del algoritmo, -C es el correo ligado
+	ssh-keygen -t rsa -b 4096 -C "name@email.com"
+Para revisar si está el servicio ssh activo
+	eval $(ssh-agent -s)
+Para que el sistema reconozca la clave ssh hay que agregar la llave privada (nunca compartirla). ~ hace referencia al directorio raíz. Instrucciones para Windows y Linux.
+	ssh-add ~/.ssh/id_rsa
+Recomendación. Crear llave publica y privada por computadora por seguridad.
+Se debe cambiar la URL de origin con git remote set-url <remote_name> <ssh_url>
+------------
