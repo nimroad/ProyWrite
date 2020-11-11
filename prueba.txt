@@ -76,7 +76,7 @@ git clone url
 git push
 	Envia info del repositorio local al repositorio remoto
 git fetch
-	Trae los archivos modificados en el repositorio remoto sn modificar los archivos del directorio de trabajo local.
+	Trae los archivos modificados en el repositorio remoto sin modificar los archivos del directorio de trabajo local.
 git merge
 	Fusiona los archivos traidos con git fetch y reemplaza los archivos en el directorio de trabajo local.
 git pull
@@ -86,3 +86,20 @@ git branch
 	Se crea una rama alterna a master.
 	Para moverse a la nueva rama se debe hacer git checkout nombreRama
 	Para regresar al master con git checkout master
+
+git branch -m master main
+	Cambia el nombre de master por main, para adecuarse a Github
+
+git remote add origin "Direccion https"
+	Sirve para conectar un repositorio remoto
+	Para cambiar el directorio de origin se utiliza git remote set-url <remote_name> <remote_url>
+	donde remote-name generalmente es origin y remote_url la nueva dirección del servidor remoto  
+git remote
+	Te permite ver el servidor remoto conectado
+git remote -v
+	Te permite ver las opciones de acciones con el servidor remoto
+
+git push origin master:main
+	Se utiliza datos para enviar al servidor. Anteriormente solo se utilizaba master, pero por cambio en GItHub, ahora se cambio por main, con master:main se especifica que la 
+	rama master local va a la rama main remoto. Si ya se cambió el nombre del directorio seria solo git push origin main
+
