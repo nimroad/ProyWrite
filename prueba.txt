@@ -1,8 +1,4 @@
-Esto es para ver como funciona git.
-
-Curso Pĺatzi
-
-Video "Crear un repositorio de GIt y haz gtu primer commit"
+Curso de Git en Platzi
 
 Comandos aprendidos
 git init
