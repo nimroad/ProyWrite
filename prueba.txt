@@ -132,5 +132,19 @@ git tag -a <nombre_tag> - m "Descripcion del cambio" <id_commit>
 	-a es para indicar que se agrega un tag
 	<nombre_tag> como buena practica se recomienda poner vX.X, para indicar la versión a identificar.
 	<id_commit> se puede incluir el Id Commit que entrega el log gráfico.
+git tag -d <nombre_tag>
+	Para borrar un tag de manera local, pero no afecta a los tags remotos
+git push origin :refs/tags/<nombre_tag>
+	Para borrar la referencia del tag al servidor remoto
 git show-ref --tags
 	Indica que tags y donde están asignados
+
+git push origin --tags
+	Permite enviar tags a los servidores remotos
+
+gitk
+	Versión grafica de Git, pero es recomendable usar consola.
+
+
+
+
