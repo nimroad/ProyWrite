@@ -111,3 +111,26 @@ Para que el sistema reconozca la clave ssh hay que agregar la llave privada (nun
 Recomendación. Crear llave publica y privada por computadora por seguridad.
 Se debe cambiar la URL de origin con git remote set-url <remote_name> <ssh_url>
 ------------
+
+git log --all
+	Muestra todos los cambios en el proyecto
+git log --all --graph
+	Muestra todos los cambios en el proyecto con un apoyo visual para ver las ramas de cambios
+git log --all --graph --decorate --oneline
+	Muestra todos los cambios en el proyecto con un apoyo visual para ver las ramas de cambios de una forma resumida.
+
+---Nota---
+Se pueden agregar alias a los comandos mas frecuentes y largos para agilizar su ejecución y quedan guardados de forma local.
+Ejemplo:
+Se guardo el comando para ver las ramas de forma grafica y resumida como arbol con el siguiente comando
+ 	alias arbol="git log --all --graph --decorate --oneline"
+------------	
+
+alias
+git tag -a <nombre_tag> - m "Descripcion del cambio" <id_commit>
+	Permite crear un tag a un commit específico.
+	-a es para indicar que se agrega un tag
+	<nombre_tag> como buena practica se recomienda poner vX.X, para indicar la versión a identificar.
+	<id_commit> se puede incluir el Id Commit que entrega el log gráfico.
+git show-ref --tags
+	Indica que tags y donde están asignados
