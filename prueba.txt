@@ -138,13 +138,14 @@ git push origin :refs/tags/<nombre_tag>
 	Para borrar la referencia del tag al servidor remoto
 git show-ref --tags
 	Indica que tags y donde están asignados
-
 git push origin --tags
 	Permite enviar tags a los servidores remotos
-
 gitk
 	Versión grafica de Git, pero es recomendable usar consola.
+git clone <url_remoto>
+	Para clonar un repositorio remoto en el ambiente local
 
-
+git merge <rama_origen>
+	Hay que conectarse a la rama desino donde se desea traer los cambios de la rama origen
 
 
